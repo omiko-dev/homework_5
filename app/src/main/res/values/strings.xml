@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">homework_5</string>
+    <string name="title">photo</string>
+    <string name="todo">TODO</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log In</string>
+    <string name="test_name">\@pawel_czerwinski</string>
+    <string name="test_username">Pawel Czerwinski</string>
+</resources>
