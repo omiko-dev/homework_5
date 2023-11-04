@@ -29,35 +29,40 @@
         android:text="@string/register"/>
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:background="@drawable/register_input_border"
+        android:hint="@string/email"
+        android:maxLines="1"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:maxLines="1"
-        android:hint="@string/email"
-        android:textColorHint="@color/hint_color"/>
+        android:textColorHint="@color/hint_color" />
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/register_input_border"
+        android:hint="@string/password"
+        android:password="true"
+        android:maxLines="1"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:maxLines="1"
-        android:hint="@string/password"
-        android:textColorHint="@color/hint_color"/>
+        android:textColorHint="@color/hint_color"
+        tools:ignore="Deprecated" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/acbNext"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/register_button"
         android:backgroundTint="@color/black"
-        android:textColor="@color/white"
         android:text="@string/next"
         android:textAllCaps="true"
-        android:background="@drawable/register_button" />
+        android:textColor="@color/white" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

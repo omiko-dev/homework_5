@@ -11,6 +11,7 @@
     tools:context=".RegisterFirstActivity">
 
     <ImageButton
+        android:id="@+id/ibBack"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:background="@color/white"
@@ -28,24 +29,26 @@
         android:text="@string/register"/>
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etUserName"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:background="@drawable/register_input_border"
+        android:hint="@string/username"
+        android:maxLines="1"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:maxLines="1"
-        android:hint="@string/username"
-        android:textColorHint="@color/hint_color"/>
+        android:textColorHint="@color/hint_color" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/acbSignUp"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/register_button"
         android:backgroundTint="@color/black"
-        android:textColor="@color/white"
         android:text="@string/sign_up"
         android:textAllCaps="true"
-        android:background="@drawable/register_button" />
+        android:textColor="@color/white" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
