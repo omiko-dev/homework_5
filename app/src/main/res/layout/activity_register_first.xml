@@ -16,7 +16,8 @@
         android:layout_height="40dp"
         android:background="@color/white"
         android:src="@drawable/back_icon"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        android:contentDescription="@string/todo" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -34,10 +35,11 @@
         android:layout_height="52dp"
         android:background="@drawable/register_input_border"
         android:hint="@string/email"
-        android:maxLines="1"
+        android:singleLine="true"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/hint_color" />
+        android:textColorHint="@color/hint_color"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <TextView
         android:id="@+id/tvEmailValidText"
@@ -57,11 +59,11 @@
         android:background="@drawable/register_input_border"
         android:hint="@string/password"
         android:password="true"
-        android:maxLines="1"
+        android:singleLine="true"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textColorHint="@color/hint_color"
-        tools:ignore="Deprecated" />
+        tools:ignore="Deprecated,VisualLintTextFieldSize" />
 
     <TextView
         android:id="@+id/tvPasswordValidText"
@@ -82,7 +84,8 @@
         android:backgroundTint="@color/black"
         android:text="@string/next"
         android:textAllCaps="true"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        tools:ignore="VisualLintButtonSize" />
 
     <TextView
         android:id="@+id/tvFieldValidText"

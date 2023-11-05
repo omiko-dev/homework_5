@@ -26,36 +26,31 @@ class RegisterFirstActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         binding.ibBack.setOnClickListener {
-            goMain()
+            goToMain()
         }
-
 
         binding.acbNext.setOnClickListener {
             if(checkRegisterInfo()){
-                setRegister(email = binding.etEmail.text.toString(), password = binding.etPassword.text.toString())
-                goRegisterSecond()
+                val email = binding.etEmail.text.toString()
+                val password = binding.etPassword.text.toString()
+
+                signIn(email, password)
+                goToRegisterSecond()
+
             }
         }
     }
 
-    private fun setRegister(email: String, password: String){
-
-        auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this) {
-            if(it.isSuccessful){
-                Toast.makeText(this, "register successful", Toast.LENGTH_SHORT).show()
-            }else {
-                Toast.makeText(this, "wrong operation", Toast.LENGTH_SHORT).show()
-            }
-        }
-
+    private fun signIn(email: String, password: String){
+        auth.createUserWithEmailAndPassword(email, password)
     }
 
-    private fun goMain(){
+    private fun goToMain(){
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 
-    private fun goRegisterSecond(){
+    private fun goToRegisterSecond(){
         val intent = Intent(this, RegisterSecondActivity::class.java)
         startActivity(intent)
     }

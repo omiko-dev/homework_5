@@ -112,7 +112,7 @@
             android:text="@string/log_in"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintButtonSize" />
 
         <Space
             android:layout_width="10dp"
@@ -131,7 +131,7 @@
             android:textAllCaps="true"
             android:textColor="@color/white"
             app:cornerRadius="6dp"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintButtonSize" />
 
 
     </LinearLayout>

@@ -3,6 +3,7 @@ package com.example.homework_5
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.example.homework_5.databinding.ActivityLogInBinding
@@ -27,7 +28,9 @@ class LogInActivity : AppCompatActivity() {
         }
 
         binding.acbLogIn.setOnClickListener {
-            logIn(binding.etEmail.text.toString(), binding.etPassword.text.toString())
+            val email = binding.etEmail.text.toString()
+            val password = binding.etPassword.text.toString()
+            logIn(email, password)
         }
 
     }

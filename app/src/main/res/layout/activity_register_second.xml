@@ -16,7 +16,8 @@
         android:layout_height="40dp"
         android:background="@color/white"
         android:src="@drawable/back_icon"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        android:contentDescription="@string/todo" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -37,7 +38,8 @@
         android:maxLines="1"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/hint_color" />
+        android:textColorHint="@color/hint_color"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/acbSignUp"
@@ -48,7 +50,8 @@
         android:backgroundTint="@color/black"
         android:text="@string/sign_up"
         android:textAllCaps="true"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        tools:ignore="VisualLintButtonSize" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
