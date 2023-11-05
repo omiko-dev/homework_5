@@ -29,35 +29,47 @@
         android:text="@string/log_in"/>
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:background="@drawable/register_input_border"
+        android:hint="@string/email"
+        android:maxLines="1"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:maxLines="1"
-        android:hint="@string/email"
-        android:textColorHint="@color/hint_color"/>
+        android:textColorHint="@color/hint_color" />
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/register_input_border"
+        android:hint="@string/password"
+        android:maxLines="1"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:maxLines="1"
-        android:hint="@string/password"
-        android:textColorHint="@color/hint_color"/>
+        android:textColorHint="@color/hint_color" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/acbLogIn"
         android:layout_width="match_parent"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
+        android:background="@drawable/register_button"
         android:backgroundTint="@color/black"
-        android:textColor="@color/white"
         android:text="@string/log_in"
         android:textAllCaps="true"
-        android:background="@drawable/register_button" />
+        android:textColor="@color/white" />
 
+    <TextView
+        android:id="@+id/tvFieldValidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/enter_correct_email_and_password"
+        android:textColor="@color/warning_color"
+        android:visibility="invisible"
+        android:textStyle="italic" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

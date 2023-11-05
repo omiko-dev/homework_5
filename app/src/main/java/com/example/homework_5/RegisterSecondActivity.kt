@@ -1,10 +1,9 @@
 package com.example.homework_5
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.homework_5.databinding.ActivityRegisterSecondBinding
 
 class RegisterSecondActivity : AppCompatActivity() {

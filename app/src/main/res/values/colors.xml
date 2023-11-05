@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="hint_color">#686868</color>
+    <color name="warning_color">#FF0000</color>
 </resources>

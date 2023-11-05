@@ -39,6 +39,16 @@
         android:textColor="@color/black"
         android:textColorHint="@color/hint_color" />
 
+    <TextView
+        android:id="@+id/tvEmailValidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/enter_correct_email"
+        android:textColor="@color/warning_color"
+        android:visibility="invisible"
+        android:textStyle="italic" />
+
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
@@ -53,6 +63,16 @@
         android:textColorHint="@color/hint_color"
         tools:ignore="Deprecated" />
 
+    <TextView
+        android:id="@+id/tvPasswordValidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/enter_more_than_6_character"
+        android:textColor="@color/warning_color"
+        android:visibility="invisible"
+        android:textStyle="italic" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/acbNext"
         android:layout_width="match_parent"
@@ -63,6 +83,16 @@
         android:text="@string/next"
         android:textAllCaps="true"
         android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvFieldValidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/enter_all_field"
+        android:textColor="@color/warning_color"
+        android:visibility="invisible"
+        android:textStyle="italic" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
