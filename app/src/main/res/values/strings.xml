@@ -11,7 +11,7 @@
     <string name="next">Next</string>
     <string name="username">Username</string>
     <string name="sign_up">Sign up</string>
-    <string name="policy">By signing up, you agree to Photo’s Terms of Service and Privacy Policy.</string>
+    <string name="policy">By signing up, you agree to Photo’s <u>Terms of Service</u> and <u>Privacy Policy</u>.</string>
     <string name="enter_correct_email">Enter Correct Email</string>
     <string name="enter_more_than_6_character">Enter more than 6 character</string>
     <string name="enter_all_field">Enter All Field</string>
